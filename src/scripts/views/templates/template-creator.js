@@ -4,7 +4,7 @@ const createMovieDetailTemplate = (movie) => `
   <h2 class="movie__title">${movie.title}</h2>
   <img class="movie__poster" src="${CONFIG.BASE_IMAGE_URL + movie.poster_path}" alt="${movie.title}" />
   <div class="movie__info">
-    <h3>Information</h3>
+  <h3>Information</h3>
     <h4>Tagline</h4>
     <p>${movie.tagline}</p>
     <h4>Release Date</h4>
@@ -38,7 +38,7 @@ const createMovieItemTemplate = (movie) => `
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this movie" id="likeButton" class="like">
-     <i class="fa fa-heart-o" aria-hidden="true"></i>
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
@@ -48,5 +48,9 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-
-export { createMovieItemTemplate, createMovieDetailTemplate, createLikeButtonTemplate, createLikedButtonTemplate, };
+export {
+  createMovieItemTemplate,
+  createMovieDetailTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
+};
